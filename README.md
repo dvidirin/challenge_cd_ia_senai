@@ -1,3 +1,7 @@
+![Green Retro Vintage Oak Tree Logo (Capa para Facebook) (1640 × 200 px)](images/capa_face.png)
+
+![Logo SENAI](images/logo.png)
+
 # Projeto de Manutenção Preditiva com IA
 
 ## Descrição do Problema
@@ -103,3 +107,29 @@ Para tornar o modelo eficaz, os seguintes passos são cruciais:
 
 Este projeto demonstra uma compreensão clara do problema e um roteiro bem definido para a construção de um modelo de manutenção preditiva eficaz, mesmo diante dos desafios impostos pelo desbalanceamento de dados.
 
+---
+
+## :handshake: **EQUIPE**
+
+<b>Este projeto foi elaborado por:</b>
+
+| Perfil                                                                                                            | Nome e Email                                   | Localização | Github                                                                                                                                                                           | Linkedin                                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img width="100" alt="Foto de Perfil do GitHub do Daniel" src="https://avatars.githubusercontent.com/u/76978773"> | `Daniel Vidiri Neto`<br><br>dvn.face@gmail.com | Araras - SP | <a href="https://github.com/dvidirin"> <img height="30" alt="GitHub do Daniel" src="https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white"></a> | [![Github Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dvneto/) |
+
+---
+
+## Agradecimentos
+
+- I2A2;
+- MetadataH;
+
+---
+
+![Green Retro Vintage Oak Tree Logo (Capa para Facebook) (1640 × 200 px)](images/capa_face.png)
+
+---
+
+<p>
+  <img src="images/Autopin.gif">
+</p>
