@@ -4,24 +4,22 @@
 
 # Projeto Final Bootcamp Ciência de Dados e Inteligência Artificial
 
----
+## Projeto de Manutenção Preditiva com IA
 
-# Projeto de Manutenção Preditiva com IA
-
-## Descrição do Problema
+### Descrição do Problema
 
 Este projeto tem como objetivo desenvolver um sistema inteligente de manutenção preditiva para máquinas industriais. A partir de dados coletados por dispositivos IoT, o sistema deve ser capaz de identificar a ocorrência de falhas e, se possível, o tipo específico da falha. O desafio principal é criar um modelo que preveja a classe do defeito e retorne a probabilidade associada, além de extrair insights operacionais e gerar visualizações de dados para a empresa.
 
 O dataset fornecido (`bootcamp_train.csv`) contém informações de 8 atributos que descrevem o comportamento de desgaste da máquina e do ambiente, além de 5 possíveis classes de defeitos (FDF, FDC, FP, FTE, FA) e uma coluna indicando falha geral (`falha_maquina`).
 
-## Estrutura do Repositório
+### Estrutura do Repositório
 
 - `notebook.ipynb`: Contém todo o desenvolvimento do projeto, desde a análise exploratória até a avaliação do modelo.
 - `data/`: Pasta para armazenar os datasets.
   - `bootcamp_train.csv`: Dataset de treinamento e teste.
 - `README.md`: Este arquivo, com a documentação do projeto.
 
-## Como Executar o Projeto
+### Como Executar o Projeto
 
 Para replicar este projeto, siga os passos abaixo:
 
@@ -49,15 +47,15 @@ Para replicar este projeto, siga os passos abaixo:
     ```
     Abra o arquivo `notebook.ipynb` no seu navegador e execute as células sequencialmente para reproduzir a análise e o treinamento do modelo.
 
-## Metodologia e Etapas
+### Metodologia e Etapas
 
 O projeto foi desenvolvido seguindo as seguintes etapas:
 
-### Etapa 1: Compreensão do Problema e Contextualização
+#### Etapa 1: Compreensão do Problema e Contextualização
 
 Nesta fase inicial, foram importadas as bibliotecas essenciais e o dataset `bootcamp_train.csv` foi carregado. Uma análise preliminar foi realizada para entender a estrutura dos dados, tipos de variáveis, e identificar a presença de valores ausentes e inconsistências em colunas categóricas. O objetivo foi obter uma visão geral do dataset e do problema de negócio.
 
-### Etapa 2: Análise Exploratória de Dados (EDA) e Pré-processamento
+#### Etapa 2: Análise Exploratória de Dados (EDA) e Pré-processamento
 
 Esta etapa focou na limpeza e preparação dos dados:
 
@@ -66,7 +64,7 @@ Esta etapa focou na limpeza e preparação dos dados:
 -   **Engenharia de Features:** A coluna categórica `tipo` (L/M/H) foi convertida usando **One-Hot Encoding**. Novas features como `temperatura_diferencial` e `potencia_estimada` foram criadas para capturar relações adicionais nos dados.
 -   **Normalização/Escalonamento:** As features numéricas foram escalonadas usando `StandardScaler` para garantir que todas as variáveis contribuam igualmente para o modelo, transformando-as para ter média 0 e desvio padrão 1.
 
-### Etapa 3: Definição do Problema de Modelagem e Métricas
+#### Etapa 3: Definição do Problema de Modelagem e Métricas
 
 Nesta etapa, o problema foi formalmente definido como uma **classificação multirrótulo**, onde uma única amostra pode apresentar múltiplos tipos de falha simultaneamente. As variáveis-alvo (`y`) foram definidas como as colunas de falha (`FDF`, `FDC`, `FP`, `FTE`, `FA`). As features (`X`) foram as demais colunas pré-processadas.
 
@@ -74,15 +72,15 @@ O dataset `bootcamp_train.csv` foi dividido em conjuntos de treino (80%) e teste
 
 As métricas de avaliação escolhidas foram **Precision, Recall, F1-Score e AUC-ROC**, consideradas mais adequadas para problemas com classes desbalanceadas do que a acurácia.
 
-### Etapa 4: Modelagem e Treinamento
+#### Etapa 4: Modelagem e Treinamento
 
 Um modelo `RandomForestClassifier` foi selecionado como classificador base, encapsulado por um `MultiOutputClassifier` para lidar com as múltiplas saídas (tipos de falha). O modelo foi treinado com os dados de treino (`X_train`, `y_train`) e, em seguida, utilizado para gerar previsões de classes (`y_pred`) e probabilidades (`y_pred_proba`) no conjunto de teste (`X_test`).
 
-### Etapa 5: Avaliação do Modelo
+#### Etapa 5: Avaliação do Modelo
 
 O desempenho do modelo foi avaliado utilizando as métricas definidas. Foi gerado um relatório de classificação detalhado para cada rótulo, além dos scores AUC-ROC e médias agregadas (micro e macro). No entanto, foi observado que as métricas de Precision, Recall e F1-Score para as classes de falha estavam todas zeradas.
 
-### Etapa 6: Visualização de Dados e Insights
+#### Etapa 6: Visualização de Dados e Insights
 
 Foram criadas visualizações para:
 
@@ -91,13 +89,13 @@ Foram criadas visualizações para:
 -   **Matriz de Correlação:** Heatmap para visualizar a correlação entre as features numéricas.
 -   **Visualização do Relatório de Classificação:** Gráficos de barras para Precision, Recall e F1-Score por tipo de falha. Estes gráficos apareceram vazios devido às métricas zeradas, reforçando a necessidade de tratamento do desbalanceamento.
 
-## Resultados e Conclusões
+### Resultados e Conclusões
 
 O modelo inicial, um `RandomForestClassifier` com `MultiOutputClassifier`, **não foi capaz de prever as ocorrências de falha (classe positiva)** no conjunto de teste. Isso foi evidenciado pelas métricas de Precision, Recall e F1-Score para as classes de falha estarem todas zeradas. O modelo, devido ao **severo desbalanceamento de classes** no dataset (onde a maioria das amostras representa a ausência de falha), otimizou-se para prever sempre a classe majoritária (sem falha).
 
 Embora o modelo tenha sido treinado, sua incapacidade de identificar as falhas o torna inadequado para o propósito de manutenção preditiva, onde a detecção de falhas é crítica.
 
-## Próximos Passos e Melhorias
+### Próximos Passos e Melhorias
 
 Para tornar o modelo eficaz, os seguintes passos são cruciais:
 
@@ -113,7 +111,7 @@ Este projeto demonstra uma compreensão clara do problema e um roteiro bem defin
 
 ---
 
-## :handshake: **EQUIPE**
+### :handshake: **EQUIPE**
 
 <b>Este projeto foi elaborado por:</b>
 
@@ -123,7 +121,7 @@ Este projeto demonstra uma compreensão clara do problema e um roteiro bem defin
 
 ---
 
-## Agradecimentos
+### Agradecimentos
 
 - SENAI
 - TODOS OS PROFESSORES DO SENAI
