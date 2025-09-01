@@ -2,6 +2,10 @@
 
 ![Logo SENAI](images/logo.jpeg)
 
+# Projeto Final Bootcamp Ciência de Dados e Inteligência Artificial
+
+---
+
 # Projeto de Manutenção Preditiva com IA
 
 ## Descrição do Problema
