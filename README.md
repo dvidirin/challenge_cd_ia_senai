@@ -121,14 +121,12 @@ Este projeto demonstra uma compreensão clara do problema e um roteiro bem defin
 
 ## Agradecimentos
 
-- I2A2;
-- MetadataH;
+- SENAI
+- TODOS OS PROFESSORES
 
 ---
 
 ![Green Retro Vintage Oak Tree Logo (Capa para Facebook) (1640 × 200 px)](images/capa_face.png)
-
----
 
 <p>
   <img src="images/Autopin.gif">
