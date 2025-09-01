@@ -1,1 +1,0 @@
-# challenge_cd_ia_senai
