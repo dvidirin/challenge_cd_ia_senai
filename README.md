@@ -122,9 +122,7 @@ Este projeto demonstra uma compreensão clara do problema e um roteiro bem defin
 ## Agradecimentos
 
 - SENAI
-- TODOS OS PROFESSORES
-
----
+- TODOS OS PROFESSORES DO SENAI
 
 ![Green Retro Vintage Oak Tree Logo (Capa para Facebook) (1640 × 200 px)](images/capa_face.png)
 
