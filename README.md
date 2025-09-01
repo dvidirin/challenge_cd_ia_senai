@@ -1,6 +1,6 @@
 ![Green Retro Vintage Oak Tree Logo (Capa para Facebook) (1640 × 200 px)](images/capa_face.png)
 
-![Logo SENAI](images/logo.png)
+![Logo SENAI](images/logo.jpeg)
 
 # Projeto de Manutenção Preditiva com IA
 
